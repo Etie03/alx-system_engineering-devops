@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Counts a story of each line of passwd file
+
+exec < /etc/passwd
+
+while read -r passwd_output ; do
+	echo "$passwd_output" | cut -d':' -f1,3,6
+done

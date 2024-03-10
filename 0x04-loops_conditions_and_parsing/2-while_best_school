@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+m=10
+while (( m > 0 )); do echo 'Best School'; ((m--)); done
+unset m

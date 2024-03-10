@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Classic Fizzbuzz, bash style
+# m=1; while (( m < 101 )); do
+for m in {1..100}; do
+if (( m % 15 == 0 )); then echo 'FizzBuzz'
+elif (( m % 3 == 0 )); then echo 'Fizz'
+elif (( m % 5 == 0 )); then echo 'Buzz'
+else echo $; fi
+((m++)); done
+unset m

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times, and "Hi" after 9th
+m=0
+while (( m < 10 )); do
+echo 'Best School';
+if ((m == 8)); then echo 'Hi'; fi
+((m++)); done
+unset m
